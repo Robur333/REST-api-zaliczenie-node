@@ -1,0 +1,32 @@
+###
+
+POST http://localhost:3000/polutions/addData
+Content-Type: application/json
+
+{
+    
+    "place":"gpunkim",
+    "value":"much"
+    
+}
+
+
+###
+
+GET http://localhost:3000/polutions/
+
+
+###
+
+DELETE http://localhost:3000/polutions/5
+
+
+###
+
+PUT http://localhost:3000/polutions/2
+Content-Type: application/json
+
+{
+    "place" : "updated place",
+    "value" : "updated value"
+}
