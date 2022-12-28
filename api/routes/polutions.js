@@ -32,7 +32,7 @@ router.get('/:id', async (req, res) => {
   const defined = req.params.id;
   const definedId = dataModel.find(
     {
-      id: 2,
+      id: defined,
     },
     { _id: 0, __v: 0 }
   );
