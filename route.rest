@@ -1,32 +1,38 @@
-###
+### Add user to database
 
-POST http://localhost:3000/polutions/addData
+POST http://localhost:3000/users/addUser
 Content-Type: application/json
 
 {
-    
-    "place":"gpunkim",
-    "value":"much"
-    
+    "user":"test-user",
+    "password":"test-password"
 }
 
 
-###
+### Get all users
 
-GET http://localhost:3000/polutions/
+GET http://localhost:3000/users/
+
+### Get specified user
+
+GET http://localhost:3000/users/3
 
 
-###
+### Delete specified user
 
-DELETE http://localhost:3000/polutions/5
+DELETE http://localhost:3000/users/1
 
 
-###
+### Delete all users
+DELETE http://localhost:3000/users
 
-PUT http://localhost:3000/polutions/2
+
+### Update specified user
+
+PUT http://localhost:3000/users/3
 Content-Type: application/json
 
 {
-    "place" : "updated place",
-    "value" : "updated value"
+    "user" : "updated user",
+    "password" : "updated password"
 }
